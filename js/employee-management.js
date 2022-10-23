@@ -42,20 +42,35 @@ var addEmployee = function(){
     name = $("name").value;
     title = $("title").value;
     extension = $("extension").value;
-
+   
     if(name===""){
         tableCell[2].innerHTML= required;
-        emptyField = true;
+        emptyField = true; 
     }
+   else{
+        tableCell[2].innerHTML= "";
+        emptyField = false; 
+   }
+    
     if(title===""){
         tableCell[5].innerHTML= required;
         emptyField = true;
-    
+       
     }
+    else{
+        tableCell[5].innerHTML= "";
+        emptyField = false; 
+   }
     if(extension===""){
         tableCell[8].innerHTML= required;
         emptyField = true;
+        
     }
+    else{
+        tableCell[8].innerHTML= "";
+        emptyField = false; 
+   }
+
     if(!emptyField){
         tableCell[2].innerHTML = "";
         tableCell[5].innerHTML = "";
@@ -66,6 +81,13 @@ var addEmployee = function(){
         $("addEmployee").reset();
     }
 };
+// window.document.getElementById("name").addEventListener("input",function() {
+//     tableCell[2].innerHTML= "";
+//     emptyField = false; 
+//     if(this.value===""){
+//         emptyField = true;
+//     }  
+// });
 
 var employeeArray = new Array();
 employeeArray.push(["emplyee1","T1",1111],["emplyee2","T2",2222],["employee3","T3",3333],["employee4","T4",4444],["employee5","T5",5555]);
