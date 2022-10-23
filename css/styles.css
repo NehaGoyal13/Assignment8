@@ -1,0 +1,67 @@
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    padding: 0 2em 1em;
+}
+
+input[type='text']{
+width: 100%;
+padding: 5px;
+border: 1.5px solid #559be1;
+border-radius: 2px;
+resize: vertical;
+}
+
+#employee_table td{
+    padding: 10px 20px;
+    margin: 5px 0;
+}
+
+input[type='submit'] {
+    background-color: #559be1;
+    color: white;
+    padding: 8px 30px;
+    border: 1px solid gray;
+    cursor: pointer;
+    margin-left: 55%;
+}
+
+#employee_table span {
+    color: red;
+}
+
+#employee_detail{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#employee_detail td,#employee_detail th{
+    border: 2px solid white;
+    text-align: left;
+    padding: 8px; 
+}
+
+#employee_detail tr:nth-child(even){
+    background-color: #c0d4e7bd;
+}
+#employee_detail tr:nth-child(odd){
+    background-color: #9ab5cfbd;
+}
+
+#employee_detail th{
+background-color: #73a8debd;
+color: white;
+}
+
+.delete{
+    background-color: #73a8debd;
+    color: white;
+    padding: 5px 40px;
+    margin-left: 50%;
+    border: 1px solid grey;
+    cursor: pointer;
+}
